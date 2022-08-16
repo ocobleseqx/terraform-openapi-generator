@@ -1,0 +1,1 @@
+# terraform-openapi-generator
