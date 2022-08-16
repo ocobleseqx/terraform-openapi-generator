@@ -1,0 +1,6 @@
+generatorName: go-terraform-provider
+outputDir: samples/client/petstore/go/terraform/provider
+inputSpec: modules/openapi-generator/src/test/resources/3_0/petstore.yaml
+templateDir: modules/openapi-generator/src/main/resources/go-terraform-provider
+additionalProperties:
+  hideGenerationTimestamp: "true"
