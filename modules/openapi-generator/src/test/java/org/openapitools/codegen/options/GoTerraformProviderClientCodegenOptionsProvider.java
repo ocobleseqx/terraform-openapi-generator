@@ -8,7 +8,7 @@ import com.google.common.collect.ImmutableMap;
 import java.util.Map;
 
 public class GoTerraformProviderClientCodegenOptionsProvider implements OptionsProvider {
-    public static final String PROJECT_NAME_VALUE = "OpenAPI";
+    public static final String PACKAGE_NAME_VALUE = "OpenApi";
 
     @Override
     public String getLanguage() {
@@ -19,7 +19,7 @@ public class GoTerraformProviderClientCodegenOptionsProvider implements OptionsP
     public Map<String, String> createOptions() {
         ImmutableMap.Builder<String, String> builder = new ImmutableMap.Builder<String, String>();
         return builder
-                .put(GoTerraformProviderClientCodegen.PROJECT_NAME, PROJECT_NAME_VALUE)
+                .put(CodegenConstants.PACKAGE_NAME, PACKAGE_NAME_VALUE)
                 .build();
     }
 
