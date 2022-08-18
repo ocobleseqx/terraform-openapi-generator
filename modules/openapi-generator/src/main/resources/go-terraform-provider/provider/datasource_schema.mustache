@@ -1,0 +1,18 @@
+{{>partial_header}}
+package {{packageName}}
+
+import (
+	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
+)
+
+func createScaffoldingDataSourceSchema() map[string]*schema.Schema {
+	return map[string]*schema.Schema{
+        "sample_attribute": {
+            // This description is used by the documentation generator and the language server.
+            Description: "Sample attribute.",
+            Type:        schema.TypeString,
+            Optional:    true,
+        },
+    }
+}
